@@ -1,0 +1,23 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.6.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.labs'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+	testImplementation 'junit:junit:4.12'
+	testImplementation 'org.hamcrest:hamcrest-library:1.3'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
