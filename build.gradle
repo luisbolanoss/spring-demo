@@ -16,7 +16,6 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
 	testImplementation 'junit:junit:4.12'
 	testImplementation 'org.hamcrest:hamcrest-library:1.3'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
